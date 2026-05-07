@@ -10,13 +10,15 @@ The app allows users to upload multiple images, generate structured AI metadata,
 
 ### Upload Screen
 
-![Upload Screen](screenshots/upload-screen.png)
+<p align="center">
+  <img src="screenshots/UploadSection.png" width="600">
+</p>
 
 ---
 
-### Analysis Results
+### Sample Analysis Results (
 
-![Analysis Results](screenshots/results-screen.png)
+![Analysis Results](screenshots/ResultsSection.png)
 
 ---
 
