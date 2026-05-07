@@ -16,7 +16,7 @@ The app allows users to upload multiple images, generate structured AI metadata,
 
 ---
 
-### Sample Analysis Results (
+### Sample Analysis Results
 
 ![Analysis Results](screenshots/ResultsSection.png)
 
