@@ -108,7 +108,6 @@ docker run -p 8501:8501 ai-image-analyzer
 ├── app.py
 ├── requirements.txt
 ├── Dockerfile
-├── .env
 ├── .gitignore
 ├── .dockerignore
 └── README.md
