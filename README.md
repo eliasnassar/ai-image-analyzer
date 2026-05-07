@@ -30,7 +30,16 @@ The app allows users to upload multiple images, generate structured AI metadata,
 
 ---
 
-## Installation
+# Running the Application
+
+You can run the project either:
+
+1. Locally with Python
+2. Using Docker
+
+---
+
+## Option 1 — Run Locally
 
 ### Clone repository
 
@@ -65,38 +74,77 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
-
-## Environment Variables
-
-Create a `.env` file:
+### Create `.env` file
 
 ```env
 OPENAI_API_KEY=your_api_key_here
 ```
 
----
-
-## Run Application
+### Run application
 
 ```bash
 streamlit run app.py
 ```
 
+Open in browser:
+
+```text
+http://localhost:8501
+```
+
 ---
 
-## Docker
+## Option 2 — Run with Docker
 
-Build image:
+### Clone repository
+
+```bash
+git clone https://github.com/eliasnassar/ai-image-analyzer.git
+cd ai-image-analyzer
+```
+
+### Build Docker image
 
 ```bash
 docker build -t ai-image-analyzer .
 ```
 
+### Run Docker container
+
+```bash
+docker run -p 8501:8501 \
+-e OPENAI_API_KEY=your_api_key_here \
+ai-image-analyzer
+```
+
+Open in browser:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## Option 3 — Run Prebuilt Docker Hub Image
+
+Pull image from Docker Hub:
+
+```bash
+docker pull eliasnassar/image-analyzer:v1
+```
+
 Run container:
 
 ```bash
-docker run -p 8501:8501 ai-image-analyzer
+docker run -p 8501:8501 \
+-e OPENAI_API_KEY=your_api_key_here \
+eliasnassar/image-analyzer:v1
+```
+
+Open in browser:
+
+```text
+http://localhost:8501
 ```
 
 ---
